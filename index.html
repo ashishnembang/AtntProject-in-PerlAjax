@@ -1,0 +1,44 @@
+<html>
+<head>
+	<script src="resources/jquery-3.1.1.min.js"></script>
+	<script src="resources/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/index.css">
+</head>
+	<body>
+	<div id = "container">
+		<form method = "POST" action="addingAppointment.pl" id = "form_appointment">
+			<input id = "btn_new" type = "button" value = "New"/>
+			<input id = "btn_add" type = "submit" value = "Add"/>
+			<input id = "btn_cancal" type = "button" value = "Cancal"/>
+			<br><br>
+			
+			<div id = "assignment_form">
+				<div class="form-group">
+	  			<label for="date">Date:</label>
+				  <input type="date" class="form-control" id="txt_date"  name='txt_date' >
+				</div>
+				<div class="form-group">
+				  <label for="time">Time</label>
+				  <input type="time" class="form-control" id="txt_time"  name='txt_time' >
+				</div>
+				<div class="form-group">
+				  <label for="description">Description</label>
+				  <input type="text" class="form-control" id="txt_desc" name='txt_desc'>
+				</div>
+			<br><br>
+			</div>
+		</form>
+		
+		
+		<div id = "search_and_list">
+			<input id = "txt_search" type="text" name = "txt_search"/>
+			<input id = "btn_search" type = "button" value = "Submit"/>
+			<br><br>
+			<div id = "appointment_details"></div>
+		</div>
+	</div>
+	</body>
+</html>
